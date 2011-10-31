@@ -12,9 +12,9 @@
 <?php
 if ( array_key_exists( 'code', $_POST )) {
 	$code = $_POST['code'];
-	preg_match_all( '/\$m[a-zA-Z0-9]+/', $code, $matches );
-	foreach( $matches as $memberFieldNameArr ) {
-		$memberFieldName = $memberFieldNameArr[0];
+	preg_match_all( '/\$m[a-zA-Z0-9]+/', $code, $matchgroups );
+	// print_r($matchgroups);
+	foreach( $matchgroups[0] as $memberFieldName ) {
 		$memberFieldName = substr( $memberFieldName, 1 );
 		$fieldName = lcfirst(substr( $memberFieldName, 1 ));
 		if ( count( $memberFieldName > 1 )) {
@@ -28,7 +28,8 @@ if ( array_key_exists( 'code', $_POST )) {
 		$setter	= "
 public function set$fieldNameCapitalized( \$$fieldName ) { 
     \$this->$memberFieldName = \$$fieldName;
-}";
+}
+";
 	echo( $setter );
 		}
 	}
