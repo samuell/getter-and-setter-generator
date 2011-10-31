@@ -7,7 +7,8 @@
  */
 
 ?>
-<pre style="border: 1px solid #ccc; background: #efefef; padding: .4em .7em;">
+<pre style="border: 1px solid #ccc; background: #efefef; 
+            padding: .4em .7em; width: 566px;">
 <?php
 if ( array_key_exists( 'code', $_POST )) {
 	$code = $_POST['code'];
