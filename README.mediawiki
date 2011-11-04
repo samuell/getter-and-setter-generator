@@ -7,10 +7,10 @@ Language: PHP 5
 
 Snaps up any variables of the form <code>$mVariableName</code> and produces getter and setter functions, looking like this:
 
-<code>public function getVariableName() { </code>
-<code>    return $this->mVariableName;</code>
-<code>}</code>
-<code>public function setVariableName( $variableName ) { </code>
-<code>    $this->mVariableName = $variableName;</code>
-<code>}</code>
+<code>public function getVariableName() { </code><br>
+<code>    return $this->mVariableName;</code><br>
+<code>}</code><br>
+<code>public function setVariableName( $variableName ) { </code><br>
+<code>    $this->mVariableName = $variableName;</code><br>
+<code>}</code><br>
 
