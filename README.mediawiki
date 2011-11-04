@@ -1,0 +1,18 @@
+== Basic info ==
+
+Author: Samuel Lampa
+Language: PHP 5
+
+== Getter and Setter generator ==
+
+Snaps up any variables of the form <code>$mVariableName</code> and produces getter and setter functions, looking like this:
+
+ public function getVariableName() { 
+     return $this->mVariableName;
+ }
+ public function setVariableName( $variableName ) { 
+     $this->mVariableName = $variableName;
+ }
+
+
+
