@@ -1,6 +1,6 @@
 == Basic info ==
 
-Author: Samuel Lampa
+Author: Samuel Lampa<br>
 Language: PHP 5
 
 == Getter and Setter generator ==
